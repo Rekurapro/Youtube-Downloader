@@ -29,7 +29,7 @@ def ex_id(id):
     file.close()
     return result
 
-bot = telebot.TeleBot('1511452974:AAFDJ3t0h_ocgGdrurJtN_oZmcVRUhIKTyk')
+bot = telebot.TeleBot('Token')
 
 #audio
 
