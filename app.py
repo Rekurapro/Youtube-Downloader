@@ -56,13 +56,7 @@ mp4_8K = types.InlineKeyboardButton(text='8K', callback_data='8K')
 @bot.message_handler(commands=['start'])
 def start(message):
     if message.chat.type == 'private':
-        id = message.from_user.id
-        req = requests.get(f'https://api.telegram.org/bot1511452974:AAFDJ3t0h_ocgGdrurJtN_oZmcVRUhIKTyk/getChatMember?chat_id=@rickpro3&user_id={id}', headers=headerss)
-        s = str(req.json()['result']['status'])
-        if s == 'left':
-            bot.send_message(message.chat.id, text='@rickpro3\nSubscribe to use the bot\n/start')
-        else:
-            idu = message.from_user.id
+           idu = message.from_user.id
             f = open('users.txt', 'a')
             if (not ex_id(str(idu))):
                 usern = message.from_user.username
